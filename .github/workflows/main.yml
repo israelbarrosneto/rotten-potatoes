@@ -27,7 +27,7 @@ jobs:
          push: true
          tags: |  
            barrosneto/rooten-potatoes:latest 
-           barrosneto/rooten-potatoes: ${{} github.run_number }} 
+           barrosneto/rooten-potatoes: ${{ github.run_number }} 
 
   CD:
     runs-on: ubuntu-latest
