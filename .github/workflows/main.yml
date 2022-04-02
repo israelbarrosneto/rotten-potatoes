@@ -27,8 +27,8 @@ jobs:
          file: ./src/Dockfile
          push: true
          tags: |  
-           barrosneto/rooten-potatoes:latest 
-           barrosneto/rooten-potatoes:${{ github.run_number }}
+           israelbarrosneto/rooten-potatoes:latest 
+           israelbarrosneto/rooten-potatoes:${{ github.run_number }}
 
   CD:
     runs-on: ubuntu-latest
