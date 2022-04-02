@@ -18,16 +18,17 @@ jobs:
        with:
         username: ${{ secrets.DOCKERHUB_USER }}
         password: ${{ secrets.DOCKERHUB_PWD }}
-          
+     
+     
      - name: Build and push Docker images
        uses: docker/build-push-action@v2
        with:
-         context: /home/israel/rotten-potatoes/src/
-         file: /home/israel/rotten-potatoes/src/Dockfile
+         context: /rotten-potatoes/src/
+         file: /rotten-potatoes/src/Dockfile
          push: true
          tags: |  
            barrosneto/rooten-potatoes:latest 
-           barrosneto/rooten-potatoes:v2
+           barrosneto/rooten-potatoes:${{ github.run_number }}
 
   CD:
     runs-on: ubuntu-latest
