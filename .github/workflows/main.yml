@@ -49,4 +49,4 @@ jobs:
        with:
         images: barrosneto/rooten-potatoes:${{ github.run_number }}
         manifests: |
-          k8s/deployment.yaml
+          /home/israel/rotten-potatoes/k8s/deployment.yaml
