@@ -23,8 +23,8 @@ jobs:
      - name: Build and push Docker images
        uses: docker/build-push-action@v2
        with:
-         context: /rotten-potatoes/src/
-         file: /rotten-potatoes/src/Dockfile
+         context: ./src/
+         file: ./src/Dockfile
          push: true
          tags: |  
            barrosneto/rooten-potatoes:latest 
