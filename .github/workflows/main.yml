@@ -34,8 +34,5 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tag:  |
-            barrosneto/rooten-potatoes:latest
-            barrosneto/rooten-potatoes:${{ github.run_number }}
-      
-
+          tags: ${{ barrosneto/rooten-potatoes:latest }}
+       
