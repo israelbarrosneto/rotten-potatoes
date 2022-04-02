@@ -27,8 +27,8 @@ jobs:
          file: ./src/Dockerfile
          push: true
          tags: |  
-           israelbarrosneto/rooten-potatoes:latest 
-           israelbarrosneto/rooten-potatoes:${{ github.run_number }}
+           barrosneto/rooten-potatoes:latest 
+           barrosneto/rooten-potatoes:${{ github.run_number }}
 
 
   CD:
