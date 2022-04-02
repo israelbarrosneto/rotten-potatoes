@@ -1,20 +1,14 @@
-
-
 name: CI-CD
-
 
 on:
   push:
     branches: [ main ]
 
- 
   workflow_dispatch:
-
 
 jobs:
   CI:
     runs-on: ubuntu-latest
-
   
     steps:
      - uses: actions/checkout@v2
@@ -34,15 +28,16 @@ jobs:
          tags: |  
            barrosneto/rooten-potatoes:latest 
            barrosneto/rooten-potatoes: ${{} github.run_number }} 
+
   CD:
     runs-on: ubuntu-latest
       
-     steps: 
-      - uses: actions/checkout@v2
+    steps: 
+     - uses: actions/checkout@v2
      
-      - name: Kubernetes Set Context
-        uses: Azure/k8s-set-context@v2
-        with:
-          method: kubeconfig
-          kubeconfig: ${{ secrets.k8s_KUBECONFIG }}
+     - name: Kubernetes Set Context
+       uses: Azure/k8s-set-context@v2
+       with:
+         method: kubeconfig
+         kubeconfig: ${{ secrets.k8s_KUBECONFIG }}
    
