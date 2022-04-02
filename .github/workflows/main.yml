@@ -22,8 +22,8 @@ jobs:
      - name: Build and push Docker images
        uses: docker/build-push-action@v2
        with:
-         context: /home/israel/rotten-potatoes/src/app/
-         file: /home/israel/rotten-potatoes/src/app/dockfile
+         context: /home/israel/rotten-potatoes/src/
+         file: /home/israel/rotten-potatoes/src/dockfile
          push: true
          tags: |  
            barrosneto/rooten-potatoes:latest 
