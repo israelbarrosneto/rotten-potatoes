@@ -23,7 +23,7 @@ jobs:
        uses: docker/build-push-action@v2
        with:
          context: /home/israel/rotten-potatoes/src/
-         file: /home/israel/rotten-potatoes/src/dockfile
+         file: /home/israel/rotten-potatoes/src/Dockfile
          push: true
          tags: |  
            barrosneto/rooten-potatoes:latest 
