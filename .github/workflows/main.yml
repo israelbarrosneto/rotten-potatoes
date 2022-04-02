@@ -22,7 +22,7 @@ jobs:
      - name: Build and push Docker images
        uses: docker/build-push-action@v2
        with:
-         context: /home/israel/rotten-potatoes/src/
+         context: /home/israel/rotten-potatoes/src/dockerfile
          file: /home/israel/rotten-potatoes/src/dockfile
          push: true
          tags: |  
